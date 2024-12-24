@@ -1,301 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Supriya Kukunuru - Full Stack Developer</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    /* Header Styling */
-    .header {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: #fff;
-      padding: 1rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .navigation ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .navigation a {
-      color: #fff;
-      padding: 0.5rem 1rem;
-      transition: background 0.3s;
-    }
-
-    .navigation a:hover {
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 5px;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
-      color: #fff;
-      text-align: center;
-      padding: 4rem 0;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      margin-bottom: 1.5rem;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: #2575fc;
-      color: #fff;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .btn-primary:hover {
-      background: #1a5bcc;
-    }
-
-    /* Projects Section */
-    .projects {
-      background: #f4f4f4;
-      padding: 4rem 0;
-    }
-
-    .projects h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .project {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-10px);
-    }
-
-    .project img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .project h3 {
-      padding: 1rem;
-    }
-
-    .project p {
-      padding: 0 1rem 1rem;
-    }
-
-    /* Services Section */
-    .services {
-      padding: 4rem 0;
-    }
-
-    .services h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .service {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .service h3 {
-      margin-bottom: 1rem;
-      color: #2575fc;
-    }
-
-    /* About Section */
-    .about {
-      background: #f4f4f4;
-      padding: 4rem 0;
-    }
-
-    .about h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-
-    .skills-list li {
-      background: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Footer */
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-    }
-  </style>
-</head>
-<body>
-  <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
     <div class="container">
-      <a href="#home" class="logo">Supriya Kukunuru</a>
-      <nav class="navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <div class="header-row"> 
+        <div class="box"><h1>Supriya Kukunuru</h1></div>
+        <div class="box">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <h1>Full Stack Developer</h1>
-        <p>
-          I'm a versatile Full Stack Developer skilled in creating engaging web applications. My expertise spans both front-end and back-end development, ensuring seamless user experiences and robust server-side solutions.
-        </p>
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <article class="project">
-            <a href="https://github.com/SUPRIYAKUKUNURU">
-              <img src="assets/images/project1.jpg" alt="Tech Shop Website">
-              <h3>Tech Shop</h3>
-            </a>
-            <p>A functional and visually appealing online store built with HTML, CSS, and Bootstrap.</p>
-          </article>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Services</h2>
-        <div class="service-grid">
-          <div class="service">
+      <div class="row" id="home">
+        <div style="display: flex;padding-top: 50px;">
+          <div class="box">
+            <h1>Full Stack Developer</h1>
+            <p>
+               I'm a versatile Full Stack Developer capable of handling all aspects of web application development,
+               from initial concept and design to deployment and ongoing maintenance. My expertise spans both front-end development, 
+               creating engaging and responsive user interfaces with technologies like HTML, CSS, JavaScript, 
+               and React Js, and back-end development, building robust and scalable server-side solutions using  Java and frameworks like Spring, 
+               and managing various databases. I thrive in collaborative environments, contributing to 
+               all phases of the software development lifecycle, and am committed to delivering efficient, effective, 
+               and maintainable solutions that meet client objectives and drive business value.
+            </p>
+            <button>Button 1</button>
+            <button>Button 1</button>
+          </div>
+          <div class="box">
+            <img src="https://picsum.photos/id/2/400/400" />
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="row" style="background-color: rgb(183, 239, 249)">
+        <h1>Projects</h1>
+        <div style="display: flex">
+          <div class="box">
+            <h3><a href="https://github.com/SUPRIYAKUKUNURU">Tech-Shop </a></h3>
+            <p>
+              I had done a Tech shop website utilizes HTML for semantic markup,
+              CSS for visual presentation, and Bootstrap's 
+              powerful grid system and components to create
+              a functional and visually appealing online store.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3><a href="">E-Commerce</a></h3>
+            <p>
+              This responsive e-commerce website offers a user-friendly
+              platform for online shopping.Utilizing HTML, CSS, Bootstrap,
+              and JavaScript,it features product browsing,
+              search functionality, a shopping cart,and a smooth checkout process.
+              Its responsive design ensures optimal viewing on desktops, 
+              tablets, and mobile phones.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="services" class="row" style="background-color: lightblue">
+        <h1>Services</h1>
+        <div style="display: flex">
+          <div class="box">
             <h3>Web App Development</h3>
             <p>
-              I build user-friendly and responsive web applications utilizing HTML, CSS, JavaScript, and frameworks like React.js.
+              Web development is the process of building 
+              and maintaining websites and web applications. 
+              It involves front-end development (user interface using HTML, CSS, and JavaScript).
             </p>
           </div>
 
-          <div class="service">
+          <div class="box">
             <h3>Mobile App Development</h3>
             <p>
-              I create dynamic and intuitive mobile applications tailored to client needs, using modern technologies.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
             </p>
           </div>
 
-          <div class="service">
+          <div class="box">
             <h3>Backend Development</h3>
             <p>
-              I create robust and scalable server-side solutions using Java and Spring frameworks, ensuring efficient database management.
+              Back-end development handles the server-side logic,
+              databases, and APIs that power websites and applications.
+              It involves server-side programming languages java and spring,
+              database management, and ensuring application functionality, security, and performance.
             </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I'm a passionate Full Stack Developer with a strong desire to create innovative and user-centric web solutions. I thrive in collaborative environments and possess excellent communication skills.
-        </p>
-        <h3>Skills</h3>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>JavaScript</li>
-          <li>Java</li>
-          <li>Spring</li>
-          <li>SQL</li>
-          <li>React.js</li>
-        </ul>
+      <div id="about" class="row">
+        <h1>About</h1>
+        <h3>
+           As a frontend developer, i specialize in creating
+           user interfaces and ensuring a seamless user experience 
+           using technologies like HTML, CSS, and JavaScript. 
+           My role involves designing responsive, interactive,
+           and visually appealing web applications.
+        </h3>
+        <h2>Skills</h2>
+        <h3>Html,Css,Bootstrap,JavaScript,Java,Spring and Sql.</h3>
+        <img src="./assets/images/download (1).png"/>
+        <img src="./assets/images/download.jpeg"/>
+        <img src="./assets/images/download (2).png"/>
+        <img src="./assets/images/react.jpeg"/>
+       
       </div>
-    </section>
-  </main>
+      <div
+        id="contact"
+        class="row"
+        style="background-color: rgb(134, 214, 236)"
+      >
+        <h1>Contact</h1>
+        <div style="display: flex">
+         
 
-  <footer>
-    <p>&copy; 2024 Supriya Kukunuru. All rights reserved.</p>
-  </footer>
-</body>
+          <div class="box">
+            <h3>Contact Form</h3>
+            <p>
+             <input type="text" placeholder="Enter Name">
+            </p>
+            <p>
+              <input type="email" placeholder="Enter Email">
+             </p>
+             <p>
+              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
+             </p>
+             <button>Send</button>
+          </div>
+
+          <div class="box">
+            <h3>Your/Company Name</h3>
+            <p>
+              <b>Address: </b>
+              Ayyappa Layout,Marathahalli,Bangalore,
+              Karnataka,560037.
+            </p>
+            <p>
+              <b>Email Address: </b>supriyakukunuru2001@gmail.com
+            </p>
+            <p>
+              <b>Phone Number: </b>+91 88854 98604 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">@copyright 2024. All rights reserved.</div>
+    </div>
+  </body>
 </html>
