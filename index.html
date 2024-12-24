@@ -1,177 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name</title>
-    <link rel="icon" type="image/x-icon" href="ball.png" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header-row"> 
-        <div class="box"><h1>Supriya Kukunuru</h1></div>
-        <div class="box">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
 
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="icon" type="image/x-icon" href="ball.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .header-row ul li a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Sections */
+    .row {
+      padding: 50px 20px;
+    }
+
+    .row:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+
+    .row:nth-child(even) {
+      background-color: #e9f7fa;
+    }
+
+    /* Boxes */
+    .box {
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+
+    .box img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Buttons */
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    /* Contact Form */
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #4CAF50;
+      color: white;
+    }
+
+    /* Flexbox Layouts */
+    .row div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .row .box {
+      max-width: 30%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .row div {
+        flex-direction: column;
+      }
+
+      .box {
+        max-width: 100%;
+      }
+    }
+
+    /* About Section */
+    #about img {
+      max-width: 50px;
+      margin: 5px;
+    }
+
+    #about div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-row">
+      <div class="box"><h1>Supriya Kukunuru</h1></div>
+      <div class="box">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-
-      <div class="row" id="home">
-        <div style="display: flex;padding-top: 50px;">
-          <div class="box">
-            <h1>Full Stack Developer</h1>
-            <p>
-               I'm a versatile Full Stack Developer capable of handling all aspects of web application development,
-               from initial concept and design to deployment and ongoing maintenance. My expertise spans both front-end development, 
-               creating engaging and responsive user interfaces with technologies like HTML, CSS, JavaScript, 
-               and React Js, and back-end development, building robust and scalable server-side solutions using  Java and frameworks like Spring, 
-               and managing various databases. I thrive in collaborative environments, contributing to 
-               all phases of the software development lifecycle, and am committed to delivering efficient, effective, 
-               and maintainable solutions that meet client objectives and drive business value.
-            </p>
-            <button>Button 1</button>
-            <button>Button 1</button>
-          </div>
-          <div class="box">
-            <img src="https://picsum.photos/id/2/400/400" />
-          </div>
-        </div>
-      </div>
-
-      <div id="projects" class="row" style="background-color: rgb(183, 239, 249)">
-        <h1>Projects</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3><a href="https://supriyakukunuru.github.io/Techshop/">Tech-Shop </a></h3>
-            <p>
-              I had done a Tech shop website utilizes HTML for semantic markup,
-              CSS for visual presentation, and Bootstrap's 
-              powerful grid system and components to create
-              a functional and visually appealing online store.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3><a href=" https://supriyakukunuru.github.io/E-Commerce">E-Commerce</a></h3>
-            <p>
-              This responsive e-commerce website offers a user-friendly
-              platform for online shopping.Utilizing HTML, CSS, Bootstrap,
-              and JavaScript,it features product browsing,
-              search functionality, a shopping cart,and a smooth checkout process.
-              Its responsive design ensures optimal viewing on desktops, 
-              tablets, and mobile phones.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Project 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="services" class="row" style="background-color: lightblue">
-        <h1>Services</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Web App Development</h3>
-            <p>
-              Web development is the process of building 
-              and maintaining websites and web applications. 
-              It involves front-end development (user interface using HTML, CSS, and JavaScript).
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Mobile App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Backend Development</h3>
-            <p>
-              Back-end development handles the server-side logic,
-              databases, and APIs that power websites and applications.
-              It involves server-side programming languages java and spring,
-              database management, and ensuring application functionality, security, and performance.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="about" class="row">
-        <h1>About</h1>
-        <h3>
-           As a frontend developer, i specialize in creating
-           user interfaces and ensuring a seamless user experience 
-           using technologies like HTML, CSS, and JavaScript. 
-           My role involves designing responsive, interactive,
-           and visually appealing web applications.
-        </h3>
-        <h2>Skills</h2>
-        <h3>Html,Css,Bootstrap,JavaScript,Java,Spring and Sql.</h3>
-        <div style="display:flex;justify-content:space-evenly">
-          <img src="download (1).png"/>
-          <img src="download.jpeg"/>
-          <img src="download (2).png"/>
-          <img src="react.jpeg"/>
-        </div>
-      </div>
-      <div
-        id="contact"
-        class="row"
-        style="background-color: rgb(134, 214, 236)"
-      >
-        <h1>Contact</h1>
-        <div style="display: flex">
-         
-
-          <div class="box">
-            <h3>Contact Form</h3>
-            <p>
-             <input type="text" placeholder="Enter Name">
-            </p>
-            <p>
-              <input type="email" placeholder="Enter Email">
-             </p>
-             <p>
-              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-             </p>
-             <button>Send</button>
-          </div>
-
-          <div class="box">
-            <h3>Your/Company Name</h3>
-            <p>
-              <b>Address: </b>
-              Ayyappa Layout,Marathahalli,Bangalore,
-              Karnataka,560037.
-            </p>
-            <p>
-              <b>Email Address: </b>supriyakukunuru2001@gmail.com
-            </p>
-            <p>
-              <b>Phone Number: </b>+91 88854 98604 
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="footer">@copyright 2024. All rights reserved.</div>
     </div>
-  </body>
-</html>
+
+    <div class="row" id="home">
+      <div style="display: flex; padding-top: 50px;">
+        <div class="box">
+          <h1>Full Stack Developer</h1>
+          <p>
+            I'm a versatile Full Stack Developer capable of handling all aspects of web application development,
+            from initial concept and design to deployment and ongoing maintenance. My expertise spans both front-end development,
+            creating engaging and responsive user interfaces with technologies like HTML, CSS, JavaScript,
+            and React Js, and back-end development, building robust and scalable server-side solutions using Java and frameworks like Spring,
+            and managing various databases. I thrive in collaborative environments, contributing to
+            all phases of the software development lifecycle, and am committed to delivering efficient, effective,
+            and maintainable solutions that meet client objectives and drive business value.
+          </p>
+          <button>Learn More</button>
+          <button>Contact Me</button>
+        </div>
+        <div class="box">
+          <img src="https://picsum.photos/id/2/400/400" alt="Profile Image" />
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="row">
+      <h1>Projects</h1>
+      <div style="display: flex">
+        <div class="box">
+          <h3><a href="https://supriyakukunuru.github.io/Techshop/">Tech-Shop</a></h3>
+          <p>
+            A Tech shop website utilizing HTML for semantic markup,
+            CSS for visual presentation, and Bootstrap's
+            powerful grid system and components to create
+            a functional and visually appealing online store.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3><a href="https://supriyakukunuru.github.io/E-Commerce/">E-Commerce</a></h3>
+          <p>
+            This responsive e-commerce website offers a user-friendly
+            platform for online shopping. Utilizing HTML, CSS, Bootstrap,
+            and JavaScript, it features product browsing,
+            search functionality, a shopping cart, and a smooth checkout process.
+            Its responsive design ensures optimal viewing on desktops,
+            tablets, and mobile phones.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Project 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="row">
+      <h1>Services</h1>
+      <div style="display: flex">
+        <div class="box">
+          <h3>Web App Development</h3>
+          <p>
+            Web development is the process of building
+            and maintaining websites and web applications.
+            It involves front-end development (user interface using HTML, CSS, and JavaScript).
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Mobile App Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Backend Development</h3>
+          <p>
+            Back-end development handles the server-side logic,
+            databases, and APIs that power websites and applications.
+            It involves server-side programming languages like Java and Spring,
+            database management, and ensuring application functionality, security, and performance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="row">
+      <h1>About</h1>
+      <h3>
+        As a frontend developer, I specialize in creating
+        user interfaces and ensuring a seamless user experience
+        using technologies like HTML, CSS, and JavaScript.
+        My role involves designing responsive, interactive,
+        and visually appealing web applications.
+      </h3>
+      <h2>Skills</h2>
+      <h3>HTML, CSS, Bootstrap, JavaScript, Java, Spring, and SQL</h3>
+      <div style="display: flex; justify-content: space-evenly">
+        <img src="download (1).png" alt="HTML" />
+        <img src="download.jpeg" alt="CSS" />
+        <img src="download (2).png" alt="Java
